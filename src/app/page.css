@@ -17,7 +17,9 @@ body {
   align-items: center;
 }
 
-
+.navbar-icon{
+  min-width: 20px; 
+}
 
 .hello {
   display: flex;

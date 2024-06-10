@@ -18,9 +18,9 @@
   left: 0;
   right: 0;
   background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
   flex: 1;
-
+  flex-shrink: 1;
 
 }
 
@@ -73,7 +73,7 @@
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1281px) {
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -82,14 +82,15 @@
     top: 100px;
     left: 0;
     background-color: white;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
     align-items: flex-start;
-    
+
   }
 
-  .contact--icon{
+  .contact--icon {
     visibility: hidden;
   }
+
   .nav-menu.active {
     display: flex;
   }
