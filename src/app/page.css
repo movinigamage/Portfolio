@@ -370,11 +370,7 @@ h2 {
     text-align: start;
   }
 
-  .experince p {
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-bottom: 50px;
-  }
+ 
 
 
 
@@ -392,6 +388,12 @@ h2 {
   .footer,
   .sub--footer {
     visibility: hidden;
+  }
+
+  .experince p {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 50px;
   }
 }
 
