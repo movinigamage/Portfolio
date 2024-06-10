@@ -11,11 +11,11 @@ function Footer() {
 
         <div className='footer--main'>
             <div className='footer'>
-                <div><Image className='footer--logo' src={movinilogo}/></div>
+                <div><Image className='footer--logo' src={movinilogo} /></div>
 
                 <div className='footer--menu'>
                     <div className='footer--contact'>
-                        <ul className='font-poppins text-customColor text-lg font-medium'>
+                        <ul className='font-poppins text-customColor'>
                             <li><a href=''>mwmgamage@gmail.com</a></li>
                             <li>+94 768886618</li>
                         </ul>
@@ -34,7 +34,7 @@ function Footer() {
 
 
             <div className='sub--footer'>
-                <ul className='font-poppins text-customColor text-lg font-medium'>
+                <ul className='font-poppins text-customColor'>
                     <li><a href=''>Home</a></li>
                     <li><a href='#about'>About</a></li>
                     <li><a href='#tech'>Tech Stack</a></li>
@@ -47,6 +47,15 @@ function Footer() {
                     Designed and built by Movini .
                 </div >
 
+            </div>
+
+
+
+            <div className='mobile--footer'>
+                <Image className='footer--logo' src={movinilogo} />
+                <div>
+                    Designed and built by Movini .
+                </div >
             </div>
 
 
