@@ -5,29 +5,6 @@ body {
   height: 100%;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  color: #666666;
-  font-size: medium;
-  position: fixed;
-  overflow: hidden;
-  left: 0;
-  right: 0;
-  top: 0;
-  padding: 30px 70px;
-
-  flex: 1;
-  gap: 50px;
-  height: 100px;
-
-}
-
-
-
 .nav--menu {
   display: flex;
   align-items: center;
@@ -40,21 +17,6 @@ body {
   align-items: center;
 }
 
-.contact--icon {
-  padding-left: 20px;
-}
-
-.navbar-icon {
-  min-height: auto;
-  min-width: 30px;
-
-}
-
-.nav--menu>.contact--icon ul {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
 
 .hello {
   display: flex;
@@ -369,11 +331,6 @@ h2 {
   .experince {
     text-align: start;
   }
-
- 
-
-
-
 
   .mobile--footer {
     display: flex;
