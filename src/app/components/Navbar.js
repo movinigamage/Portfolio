@@ -41,9 +41,9 @@ function Navbar() {
                     </ul>
                     <div className='contact--icon'>
                         <ul>
-                            <li><a href='https://github.com/movinigamage'><Image src={gitlogo} className='navbar-icon' /></a></li>
-                            <li><a href=''><Image src={twitlogo} className='navbar-icon' /></a></li>
-                            <li><a href='https://www.linkedin.com/in/movini/'><Image src={linkedinlogo} className='navbar-icon' /></a></li>
+                            <li><a href='https://github.com/movinigamage'><Image src={gitlogo} className='navbar-icon w-6 h-6' /></a></li>
+                            <li><a href=''><Image src={twitlogo} className='navbar-icon w-6 h-6' /></a></li>
+                            <li><a href='https://www.linkedin.com/in/movini/'><Image src={linkedinlogo} className='navbar-icon w-6 h-6' /></a></li>
                         </ul>
                     </div>
                 </div>
