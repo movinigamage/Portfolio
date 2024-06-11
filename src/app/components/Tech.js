@@ -18,22 +18,45 @@ function Tech() {
                 <h1 className='text-4xl font-bold'>My Tech Stack</h1>
                 <p className='text-2xl '>Technologies I’ve been working with recently</p>
             </div>
-           
+
             <div className='tech--icon'>
                 <ul className='icon--first--line'>
-                    <li><Image src={htmllogo} alt='max'/></li>
-                    <li><Image src={jslogo}/></li>
-                    <li><Image src={reactlogo}/></li>
-                    <li><Image src={boostraplogo}/></li>
+                    <li><Image src={htmllogo} alt='max' /></li>
+                    <li><Image src={jslogo}  /></li>
+                    <li><Image src={reactlogo}  /></li>
+                    <li><Image src={boostraplogo}  /></li>
                 </ul>
                 <ul className='icon--second--line'>
-                    <li><Image src={vscodelogo}/></li>
-                    <li><Image src={githublogo}/></li>
-                    <li><Image src={html5logo}/></li>
-                    <li><Image src={gitlogo}/></li>
+                    <li><Image src={vscodelogo}  /></li>
+                    <li><Image src={githublogo}  /></li>
+                    <li><Image src={html5logo}  /></li>
+                    <li><Image src={gitlogo}  /></li>
                 </ul>
 
             </div>
+
+            <div className=' mobile--tech--icon'>
+                <ul className='mobile-tech'>
+                    <li><Image src={htmllogo} alt='max' className='tech--logo' /></li>
+                    <li><Image src={jslogo} className='tech--logo' /></li>
+                </ul>
+                <ul className='mobile-tech'>
+                    <li><Image src={reactlogo} className='tech--logo' /></li>
+                    <li><Image src={boostraplogo} className='tech--logo' /></li>
+                </ul>
+                <ul className='mobile-tech'>
+                    <li><Image src={vscodelogo} className='tech--logo' /></li>
+                    <li><Image src={githublogo} className='tech--logo' /></li>
+
+                </ul>
+                <ul className='mobile-tech'>
+                    <li><Image src={html5logo} className='tech--logo' /></li>
+                    <li><Image src={gitlogo} className='tech--logo' /></li>
+                </ul>
+
+            </div>
+
+
         </div>
     )
 }

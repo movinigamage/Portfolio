@@ -5,6 +5,12 @@ body {
   height: 100%;
 }
 
+
+#home {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav--menu {
   display: flex;
   align-items: center;
@@ -17,8 +23,8 @@ body {
   align-items: center;
 }
 
-.navbar-icon{
-  min-width: 20px; 
+.navbar-icon {
+  min-width: 20px;
 }
 
 .hello {
@@ -27,7 +33,6 @@ body {
   align-items: center;
   gap: 200px;
   margin: 200px 30px 0 30px;
-
 }
 
 
@@ -53,6 +58,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 1;
 }
 
 .icon--first--line {
@@ -68,10 +74,27 @@ body {
   align-items: center;
 }
 
+
 .tech--text p {
   padding-top: 20px;
 }
 
+.tech--logo{
+  width:80px;
+}
+
+.mobile--tech--icon{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.mobile-tech{
+  display: flex;
+  gap:80px;
+  align-items: center;
+  justify-content: center;
+}
 
 
 .about {
@@ -139,65 +162,88 @@ body {
 
 .project {
   margin: 100px 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card--collection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:30px;
+}
+
+
+.first--line--card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  flex-wrap: wrap;
+}
+
+.second--line--card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  flex-wrap: wrap;
 }
 
 .footer--main {
-  padding: 10px 30px;
   display: flex;
   flex-direction: column;
+  gap: 15px;
+  padding: 200px 30px 0;
+  font-size: medium;
 }
-
 
 .footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-top: 300px;
-  gap: 100px;
-}
-
-.footer--logo {
-  min-width: 80px;
-  width: 100px;
+  align-items: center;
 }
 
 .footer--menu {
   display: flex;
   align-items: center;
-  gap: 100px;
-}
-
-.footer--menu ul {
-  display: flex;
-}
-
-.footer--icon ul {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.footer--contact ul li {
-  padding-left: 50px;
 }
 
 .sub--footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
+  align-items: center;
 }
 
-.sub--footer ul {
+
+.sub--footer--list {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+
 }
 
+.footer--contact ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer--logo {
+  width: 100px;
+}
+
+.footer--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 
 
 /* New form card */
-
-
 
 .card {
   display: flex;
@@ -216,11 +262,12 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 50px 35px;
-  width: 550px;
+
   min-height: 580px;
   max-height: auto;
   text-align: start;
   margin-top: 70px;
+  margin: 30px;
 }
 
 h2 {
@@ -336,18 +383,19 @@ h2 {
   }
 
   .mobile--footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+    font-size: small;
+    text-align: center;
+    padding: 20px;
   }
 
 }
 
+@media screen and (width<1048px) {
 
-@media screen and (width<1048px){
   .footer,
   .sub--footer {
     visibility: hidden;
+    display: none;
   }
 
   .experince p {
@@ -356,15 +404,22 @@ h2 {
     padding-bottom: 50px;
   }
 
-
-  .project{
-    font-size: x-small;
+  .tech--icon{
+    visibility: hidden;
+    display: none;
   }
+
+ 
 }
 
 
 @media screen and (width>1048px) {
   .mobile--footer {
+    display: none;
+  }
+
+  .mobile--tech--icon{
+    visibility: hidden;
     display: none;
   }
 }

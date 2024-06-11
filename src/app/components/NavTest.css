@@ -19,13 +19,12 @@
   right: 0;
   background-color: white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-  flex: 1;
-  flex-shrink: 1;
-
+ 
+ 
 }
 
 .navbar-logo {
-  min-width: 200px;
+  min-width: 100px;
 }
 
 .navbar-logo h2 {
@@ -74,17 +73,20 @@
 }
 
 @media screen and (max-width: 1281px) {
+
+
+  .navbar-container{
+    width: 100%;
+  }
   .nav-menu {
     display: none;
     flex-direction: column;
-    width: 100%;
     position: absolute;
     top: 100px;
-    left: 0;
     background-color: white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-    align-items: flex-start;
-
+    width: 100%;
+    left: 0;
   }
 
   .contact--icon {

@@ -21,7 +21,7 @@ function Footer() {
                         </ul>
                     </div>
 
-                    <div className='footer--icon'>
+                    <div className='footer--icon nav--menu '>
                         <ul>
                             <li><a href='https://github.com/movinigamage'><Image src={gitlogo} className='navbar-icon' /></a></li>
                             <li><Image src={twitlogo} className='navbar-icon' /></li>
@@ -34,7 +34,7 @@ function Footer() {
 
 
             <div className='sub--footer'>
-                <ul className='font-poppins text-customColor'>
+                <ul className='sub--footer--list font-poppins text-customColor'>
                     <li><a href=''>Home</a></li>
                     <li><a href='#about'>About</a></li>
                     <li><a href='#tech'>Tech Stack</a></li>
@@ -52,10 +52,10 @@ function Footer() {
 
 
             <div className='mobile--footer'>
-                <Image className='footer--logo' src={movinilogo} />
                 <div>
                     Designed and built by Movini .
                 </div >
+
             </div>
 
 

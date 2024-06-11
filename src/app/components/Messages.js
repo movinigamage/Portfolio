@@ -14,10 +14,12 @@ function Messages() {
                     const data = doc.data();
                     const message = {
                         id: doc.id,
-                        name: data.name || '', // If name is missing, default to empty string
-                        message: data.message || '', // If message is missing, default to empty string
-                        time: data.time ? data.time.toDate().toLocaleTimeString() : '', // Check if time exists before calling toDate()
-                        selectedChip: data.selectedChip || '' // If selectedChip is missing, default to empty string
+                        name: data.name || '', 
+                        message: data.message || '', 
+                        time: data.time ? data.time.toDate().toLocaleTimeString() : '', 
+                        selectedChip: data.selectedChip || '',
+                        email:data.email
+
                     };
                     return message;
                 });
@@ -43,6 +45,7 @@ function Messages() {
                     <div className="flex flex-col w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
                         <div className="flex items-center space-x-2 rtl:space-x-reverse">
                             <span className="text-sm font-semibold text-gray-900 dark:text-white">{message.name}</span>
+                            <span className="text-sm font-semibold text-gray-900 dark:text-white">{message.email}</span>
                             <span className="text-sm font-normal text-gray-500 dark:text-white">{message.time}</span>
                         </div>
                         <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">{message.message}</p>

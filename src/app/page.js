@@ -22,13 +22,13 @@ export default function Home() {
     <Hello/>
     <Tech />
     <About />
-    <Experinces />
+
     <Education />
     <Qualification />
     <Projects />
     <Contact/>
-    <Footer />
-  
+ 
+  <Footer/>
   </div>
   );
 }
